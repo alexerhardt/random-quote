@@ -1,9 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const quotes = [
     ["Amazing quote 1", "Author 1"],
     ["Amazing quote 2", "Author 2"],
     ["Amazing quote 3", "Author 3"]
 ];
-
 
 class QuoteApp extends React.Component 
 {
@@ -19,7 +21,6 @@ class QuoteApp extends React.Component
     randomizeQuote()
     {
         return quotes[Math.floor(Math.random() * quotes.length)];
-
     }
     
     getNewQuote()
