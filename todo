@@ -1,0 +1,9 @@
+- Remove margin from blockquote
+- Make box fixed height; rows can be expressed as proportions
+- Align quote at center
+- Install 2 fonts: one for quote, other for text
+- Give button some weight
+- Try giving box slight transparency
+- Experiment with Tweet button at top right
+- Mobile: make width 95%, maybe add a bit of height
+- Add author at center bottom

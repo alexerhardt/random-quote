@@ -37,10 +37,12 @@ class QuoteApp extends React.Component
     render() 
     {
         return (
-            <div id="quote-box">
-                <QuoteAndAuthor currentQuote={this.state.currentQuote} />
-                <TweetButton />
-                <GenerateQuote getNewQuote={this.getNewQuote} />
+            <div className="aligner">
+                <div id="quote-box">
+                    <QuoteAndAuthor currentQuote={this.state.currentQuote} />
+                    <TweetButton />
+                    <GenerateQuote getNewQuote={this.getNewQuote} />
+                </div>
             </div>
         )
     }

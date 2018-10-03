@@ -1,3 +1,40 @@
 html {
     font-size: 150%;
 }
+
+body {
+    background-color: lightblue;
+}
+
+.center-box {
+    margin: 0 auto;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#quote-box {
+    position: relative;
+    height: 50%;
+    width: 40%;
+    background-color: white;
+}
+
+#wrap-quote {
+    height: 66%;
+}
+
+#wrap-gen-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    button {
+        height: 3rem;
+        width: 100%;
+    }
+}

@@ -5,7 +5,7 @@ class GenerateQuote extends React.Component
     render() 
     {
         return (
-            <div>
+            <div id="wrap-gen-btn">
                 <button onClick={this.props.getNewQuote}>New Quote</button>
             </div>
         )
