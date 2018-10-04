@@ -1,9 +1,7 @@
-html {
-    font-size: 150%;
-}
 
 body {
     background-color: lightblue;
+    font-size: 1rem;
 }
 
 .center-box {
@@ -20,21 +18,59 @@ body {
 #quote-box {
     position: relative;
     height: 50%;
-    width: 40%;
+    width: 90%;
     background-color: white;
 }
 
-#wrap-quote {
-    height: 66%;
+
+@media (min-width: 480px) {
+    #quote-box {
+        width: 40%;
+    }
 }
 
-#wrap-gen-btn {
+
+.row {
+    width: 100%;
+}
+
+.row__twitter {
+    height: 10%;
+    button {
+        float: right;
+    }
+}
+
+.row__wrap-quote {
+    height: 65%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    blockquote {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    cite {
+        width: 100%;
+        text-align: right;
+        margin-right: 2rem;
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+.row__gen-btn {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    height: 25%;
     
     button {
-        height: 3rem;
+        height: 100%;
         width: 100%;
     }
 }
