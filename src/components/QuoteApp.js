@@ -6,24 +6,13 @@ import QuoteModel from '../data/QuoteModel';
 
 class QuoteApp extends React.Component 
 {
-    quoteModel;
+    quoteModel = new QuoteModel();
 
-    constructor(props) 
-    {
-        super(props);
-        this.getNewQuote = this.getNewQuote.bind(this);
-        this.quoteModel = new QuoteModel();
-        this.state = {
-            currentQuote: this.quoteModel.getRandomQuote()
-        }
+    state = {
+        currentQuote: this.quoteModel.getRandomQuote()
     }
 
-    randomizeQuote()
-    {
-        return quotes[Math.floor(Math.random() * quotes.length)];
-    }
-    
-    getNewQuote()
+    getNewQuote = () =>
     {
         this.setState(() => {
             return {

@@ -2,9 +2,6 @@ import quotedata from './quotedata';
 
 class QuoteModel 
 {
-    quotes;
-    currentIndex;
-
     constructor()
     {
         this.currentIndex = 0;
