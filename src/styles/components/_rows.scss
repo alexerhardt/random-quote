@@ -1,0 +1,43 @@
+.row {
+    width: 100%;
+}
+
+.row__twitter {
+    height: $row-height-twitter;
+
+    button {
+        float: right;
+    }
+}
+
+.row__wrap-quote {
+    height: $row-height-quote; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    blockquote {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    cite {
+        width: 100%;
+        text-align: right;
+        margin-right: 2rem;
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+.row__gen-btn {
+    height: $row-height-gen-btn; 
+    
+    button {
+        height: 100%;
+        width: 100%;
+    }
+}
