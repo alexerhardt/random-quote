@@ -2,21 +2,19 @@ import React from 'react';
 import GenerateQuote from './GenerateQuote';
 import QuoteAndAuthor from './QuoteAndAuthor';
 import TweetButton from './TweetButton';
-
-const quotes = [
-    ["Amazing quote 1", "Author 1"],
-    ["Amazing quote 2", "Author 2"],
-    ["Amazing quote 3", "Author 3"]
-];
+import QuoteModel from '../data/QuoteModel';
 
 class QuoteApp extends React.Component 
 {
+    quoteModel;
+
     constructor(props) 
     {
         super(props);
         this.getNewQuote = this.getNewQuote.bind(this);
+        this.quoteModel = new QuoteModel();
         this.state = {
-            currentQuote: this.randomizeQuote()
+            currentQuote: this.quoteModel.getRandomQuote()
         }
     }
 
@@ -29,7 +27,7 @@ class QuoteApp extends React.Component
     {
         this.setState(() => {
             return {
-                currentQuote: quotes[Math.floor(Math.random() * quotes.length)]
+                currentQuote: this.quoteModel.getRandomQuote()
             }
         });
     }
