@@ -6,7 +6,7 @@ class GenerateQuote extends React.Component
     {
         return (
             <div className="row  row__gen-btn">
-                <button onClick={this.props.getNewQuote}>New Quote</button>
+                <button id="new-quote" onClick={this.props.getNewQuote}>New Quote</button>
             </div>
         )
     }

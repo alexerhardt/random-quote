@@ -6,7 +6,13 @@ class TweetButton extends React.Component
     {
         return (
             <div className="row row__twitter">
-                <button>Tweet it!</button>
+                <a 
+                    id="tweet-quote"
+                    className="twitter-share-button" 
+                    href={"https://twitter.com/intent/tweet?text=" + this.props.currentQuote[0] + " -" + this.props.currentQuote[1]}
+                    target="_blank">
+                    Tweet
+                </a>
             </div>
         )
     }

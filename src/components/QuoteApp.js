@@ -26,7 +26,7 @@ class QuoteApp extends React.Component
         return (
             <div className="aligner">
                 <div id="quote-box">
-                    <TweetButton />
+                    <TweetButton currentQuote={this.state.currentQuote} />
                     <QuoteAndAuthor currentQuote={this.state.currentQuote} />
                     <GenerateQuote getNewQuote={this.getNewQuote} />
                 </div>

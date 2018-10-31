@@ -6,8 +6,8 @@ class QuoteAndAuthor extends React.Component
     {
         return (
             <div className="row__wrap-quote">
-                <blockquote>"{this.props.currentQuote[0]}"</blockquote>
-                <cite>- {this.props.currentQuote[1]}</cite>
+                <blockquote id="text">"{this.props.currentQuote[0]}"</blockquote>
+                <cite id="author">- {this.props.currentQuote[1]}</cite>
             </div>
         )
     }

@@ -5,10 +5,11 @@
 .row__twitter {
     height: $row-height-twitter;
 
-    button {
+    *:first-child {
         float: right;
     }
 }
+
 
 .row__wrap-quote {
     height: $row-height-quote; 
